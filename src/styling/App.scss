@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $main;
+}
+
+.app__logo {
+    object-fit: contain;
+    height: 100px;
+}
+
+.app__phone {
+    place-items: center;
+    object-fit: contain;
+    height: auto;
+    width: 250px;
+}
+
+.app__body {
+    position: relative;
+    width: $standard-width;
+    height: $standard-height;
+    background-color: $black;
+    margin: 0;
+    border: 16px $black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 5px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $black-grey;
+        border-radius: 10px;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 50%;
+        bottom: -65px;
+        transform: translate(-50%, -50%);
+        background: $black-grey;
+        border-radius: 50%;
+    }
+
+    .content {
+        width: 360px;
+        height: 640px;
+        background: white;
+    }
+  }

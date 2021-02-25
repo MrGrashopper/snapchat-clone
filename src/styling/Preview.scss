@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+.preview {
+    position: relative;
+    img {
+        object-fit: cover,
+    }
+}
+
+.preview__image {
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.preview__close {
+    position: absolute;
+    top: 0px;
+    margin: 5px;
+    font-size: 22px !important;
+    color: $white;
+    cursor: pointer;
+}
+
+.preview__toolbarRight {
+    color: $white;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+    .MuiSvgIcon-root {
+        font-size: 20px !important;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+}
+
+.preview__footer {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    transform: translate(-50% -50%);
+    background-color: yellow;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    padding: 7px;
+    cursor: pointer;
+
+    h2 {
+        font-size: 8px;
+        margin-right: 3px;
+    }
+
+    .preview__sendIcon {
+        font-size: 10px !important;
+    }
+}

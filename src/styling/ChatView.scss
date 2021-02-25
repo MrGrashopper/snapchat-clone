@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.chatView {
+    position: relative;
+
+    img {
+        cursor: pointer;
+        object-fit: cover;
+    }
+}
+
+.chatView__image {
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.chatView__timer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+
